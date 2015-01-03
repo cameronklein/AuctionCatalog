@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E6FDC8F1A57B222006FA405 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6FDC8E1A57B222006FA405 /* AppDelegate.swift */; };
+		7E6FDC921A57B222006FA405 /* SandPointAuction.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E6FDC901A57B222006FA405 /* SandPointAuction.xcdatamodeld */; };
+		7E6FDC941A57B222006FA405 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6FDC931A57B222006FA405 /* MasterViewController.swift */; };
+		7E6FDC961A57B222006FA405 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6FDC951A57B222006FA405 /* DetailViewController.swift */; };
+		7E6FDC991A57B222006FA405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6FDC971A57B222006FA405 /* Main.storyboard */; };
+		7E6FDC9B1A57B222006FA405 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E6FDC9A1A57B222006FA405 /* Images.xcassets */; };
+		7E6FDC9E1A57B222006FA405 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E6FDC9C1A57B222006FA405 /* LaunchScreen.xib */; };
+		7E6FDCAA1A57B222006FA405 /* SandPointAuctionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6FDCA91A57B222006FA405 /* SandPointAuctionTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E6FDCA41A57B222006FA405 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E6FDC811A57B221006FA405 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E6FDC881A57B222006FA405;
+			remoteInfo = SandPointAuction;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7E6FDC891A57B222006FA405 /* SandPointAuction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SandPointAuction.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E6FDC8D1A57B222006FA405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E6FDC8E1A57B222006FA405 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7E6FDC911A57B222006FA405 /* SandPointAuction.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SandPointAuction.xcdatamodel; sourceTree = "<group>"; };
+		7E6FDC931A57B222006FA405 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		7E6FDC951A57B222006FA405 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7E6FDC981A57B222006FA405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7E6FDC9A1A57B222006FA405 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7E6FDC9D1A57B222006FA405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7E6FDCA31A57B222006FA405 /* SandPointAuctionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SandPointAuctionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E6FDCA81A57B222006FA405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E6FDCA91A57B222006FA405 /* SandPointAuctionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandPointAuctionTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E6FDC861A57B222006FA405 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E6FDCA01A57B222006FA405 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E6FDC801A57B221006FA405 = {
+			isa = PBXGroup;
+			children = (
+				7E6FDC8B1A57B222006FA405 /* SandPointAuction */,
+				7E6FDCA61A57B222006FA405 /* SandPointAuctionTests */,
+				7E6FDC8A1A57B222006FA405 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E6FDC8A1A57B222006FA405 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E6FDC891A57B222006FA405 /* SandPointAuction.app */,
+				7E6FDCA31A57B222006FA405 /* SandPointAuctionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E6FDC8B1A57B222006FA405 /* SandPointAuction */ = {
+			isa = PBXGroup;
+			children = (
+				7E6FDC8E1A57B222006FA405 /* AppDelegate.swift */,
+				7E6FDC931A57B222006FA405 /* MasterViewController.swift */,
+				7E6FDC951A57B222006FA405 /* DetailViewController.swift */,
+				7E6FDC971A57B222006FA405 /* Main.storyboard */,
+				7E6FDC9A1A57B222006FA405 /* Images.xcassets */,
+				7E6FDC9C1A57B222006FA405 /* LaunchScreen.xib */,
+				7E6FDC901A57B222006FA405 /* SandPointAuction.xcdatamodeld */,
+				7E6FDC8C1A57B222006FA405 /* Supporting Files */,
+			);
+			path = SandPointAuction;
+			sourceTree = "<group>";
+		};
+		7E6FDC8C1A57B222006FA405 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E6FDC8D1A57B222006FA405 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7E6FDCA61A57B222006FA405 /* SandPointAuctionTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E6FDCA91A57B222006FA405 /* SandPointAuctionTests.swift */,
+				7E6FDCA71A57B222006FA405 /* Supporting Files */,
+			);
+			path = SandPointAuctionTests;
+			sourceTree = "<group>";
+		};
+		7E6FDCA71A57B222006FA405 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E6FDCA81A57B222006FA405 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E6FDC881A57B222006FA405 /* SandPointAuction */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E6FDCAD1A57B222006FA405 /* Build configuration list for PBXNativeTarget "SandPointAuction" */;
+			buildPhases = (
+				7E6FDC851A57B222006FA405 /* Sources */,
+				7E6FDC861A57B222006FA405 /* Frameworks */,
+				7E6FDC871A57B222006FA405 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SandPointAuction;
+			productName = SandPointAuction;
+			productReference = 7E6FDC891A57B222006FA405 /* SandPointAuction.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7E6FDCA21A57B222006FA405 /* SandPointAuctionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E6FDCB01A57B222006FA405 /* Build configuration list for PBXNativeTarget "SandPointAuctionTests" */;
+			buildPhases = (
+				7E6FDC9F1A57B222006FA405 /* Sources */,
+				7E6FDCA01A57B222006FA405 /* Frameworks */,
+				7E6FDCA11A57B222006FA405 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E6FDCA51A57B222006FA405 /* PBXTargetDependency */,
+			);
+			name = SandPointAuctionTests;
+			productName = SandPointAuctionTests;
+			productReference = 7E6FDCA31A57B222006FA405 /* SandPointAuctionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E6FDC811A57B221006FA405 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Cameron Klein";
+				TargetAttributes = {
+					7E6FDC881A57B222006FA405 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					7E6FDCA21A57B222006FA405 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 7E6FDC881A57B222006FA405;
+					};
+				};
+			};
+			buildConfigurationList = 7E6FDC841A57B221006FA405 /* Build configuration list for PBXProject "SandPointAuction" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E6FDC801A57B221006FA405;
+			productRefGroup = 7E6FDC8A1A57B222006FA405 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E6FDC881A57B222006FA405 /* SandPointAuction */,
+				7E6FDCA21A57B222006FA405 /* SandPointAuctionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E6FDC871A57B222006FA405 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E6FDC991A57B222006FA405 /* Main.storyboard in Resources */,
+				7E6FDC9E1A57B222006FA405 /* LaunchScreen.xib in Resources */,
+				7E6FDC9B1A57B222006FA405 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E6FDCA11A57B222006FA405 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E6FDC851A57B222006FA405 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E6FDC921A57B222006FA405 /* SandPointAuction.xcdatamodeld in Sources */,
+				7E6FDC8F1A57B222006FA405 /* AppDelegate.swift in Sources */,
+				7E6FDC941A57B222006FA405 /* MasterViewController.swift in Sources */,
+				7E6FDC961A57B222006FA405 /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E6FDC9F1A57B222006FA405 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E6FDCAA1A57B222006FA405 /* SandPointAuctionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E6FDCA51A57B222006FA405 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E6FDC881A57B222006FA405 /* SandPointAuction */;
+			targetProxy = 7E6FDCA41A57B222006FA405 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7E6FDC971A57B222006FA405 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E6FDC981A57B222006FA405 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7E6FDC9C1A57B222006FA405 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E6FDC9D1A57B222006FA405 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E6FDCAB1A57B222006FA405 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E6FDCAC1A57B222006FA405 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E6FDCAE1A57B222006FA405 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SandPointAuction/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7E6FDCAF1A57B222006FA405 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SandPointAuction/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7E6FDCB11A57B222006FA405 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SandPointAuctionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SandPointAuction.app/SandPointAuction";
+			};
+			name = Debug;
+		};
+		7E6FDCB21A57B222006FA405 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SandPointAuctionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SandPointAuction.app/SandPointAuction";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E6FDC841A57B221006FA405 /* Build configuration list for PBXProject "SandPointAuction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E6FDCAB1A57B222006FA405 /* Debug */,
+				7E6FDCAC1A57B222006FA405 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E6FDCAD1A57B222006FA405 /* Build configuration list for PBXNativeTarget "SandPointAuction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E6FDCAE1A57B222006FA405 /* Debug */,
+				7E6FDCAF1A57B222006FA405 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7E6FDCB01A57B222006FA405 /* Build configuration list for PBXNativeTarget "SandPointAuctionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E6FDCB11A57B222006FA405 /* Debug */,
+				7E6FDCB21A57B222006FA405 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7E6FDC901A57B222006FA405 /* SandPointAuction.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7E6FDC911A57B222006FA405 /* SandPointAuction.xcdatamodel */,
+			);
+			currentVersion = 7E6FDC911A57B222006FA405 /* SandPointAuction.xcdatamodel */;
+			path = SandPointAuction.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7E6FDC811A57B221006FA405 /* Project object */;
+}
