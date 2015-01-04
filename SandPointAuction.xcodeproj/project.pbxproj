@@ -18,6 +18,7 @@
 		7E6FDCB71A589EE9006FA405 /* AuctionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6FDCB51A589EE9006FA405 /* AuctionItemCell.swift */; };
 		7E6FDCB81A589EE9006FA405 /* AuctionItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E6FDCB61A589EE9006FA405 /* AuctionItemCell.xib */; };
 		7E6FDCBA1A58A1C1006FA405 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6FDCB91A58A1C1006FA405 /* Item.swift */; };
+		7E886AB81A5A02560030E6AE /* fontawesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E886AB71A5A02560030E6AE /* fontawesome.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		7E6FDCB51A589EE9006FA405 /* AuctionItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuctionItemCell.swift; path = ../AuctionItemCell.swift; sourceTree = "<group>"; };
 		7E6FDCB61A589EE9006FA405 /* AuctionItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AuctionItemCell.xib; path = ../AuctionItemCell.xib; sourceTree = "<group>"; };
 		7E6FDCB91A58A1C1006FA405 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		7E886AB71A5A02560030E6AE /* fontawesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = fontawesome.ttf; sourceTree = "<group>"; };
+		7E886AB91A5A04B40030E6AE /* SandPointAuction 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "SandPointAuction 2.xcdatamodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,7 @@
 		7E6FDC8C1A57B222006FA405 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7E886AB71A5A02560030E6AE /* fontawesome.ttf */,
 				7E6FDC8D1A57B222006FA405 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -209,6 +213,7 @@
 			files = (
 				7E6FDC991A57B222006FA405 /* Main.storyboard in Resources */,
 				7E6FDC9E1A57B222006FA405 /* LaunchScreen.xib in Resources */,
+				7E886AB81A5A02560030E6AE /* fontawesome.ttf in Resources */,
 				7E6FDCB81A589EE9006FA405 /* AuctionItemCell.xib in Resources */,
 				7E6FDC9B1A57B222006FA405 /* Images.xcassets in Resources */,
 			);
@@ -427,6 +432,7 @@
 				7E6FDCAF1A57B222006FA405 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E6FDCB01A57B222006FA405 /* Build configuration list for PBXNativeTarget "SandPointAuctionTests" */ = {
 			isa = XCConfigurationList;
@@ -435,6 +441,7 @@
 				7E6FDCB21A57B222006FA405 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -442,9 +449,10 @@
 		7E6FDC901A57B222006FA405 /* SandPointAuction.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				7E886AB91A5A04B40030E6AE /* SandPointAuction 2.xcdatamodel */,
 				7E6FDC911A57B222006FA405 /* SandPointAuction.xcdatamodel */,
 			);
-			currentVersion = 7E6FDC911A57B222006FA405 /* SandPointAuction.xcdatamodel */;
+			currentVersion = 7E886AB91A5A04B40030E6AE /* SandPointAuction 2.xcdatamodel */;
 			path = SandPointAuction.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

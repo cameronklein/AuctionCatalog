@@ -13,10 +13,12 @@ class AuctionItemCell: UITableViewCell {
   @IBOutlet weak var cornerSquare: UIView!
   @IBOutlet weak var itemTitleLabel: UILabel!
   @IBOutlet weak var numberLabel: UILabel!
+  @IBOutlet weak var descriptionLabel: UILabel!
+  @IBOutlet weak var star: UILabel!
   
   override func awakeFromNib() {
     super.awakeFromNib()
-    // Initialization code
+    
   }
 
   override func setSelected(selected: Bool, animated: Bool) {

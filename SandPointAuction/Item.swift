@@ -9,11 +9,15 @@
 import Foundation
 import CoreData
 
+@objc(Item)
+
 class Item: NSManagedObject {
 
     @NSManaged var timeStamp: NSDate
     @NSManaged var number: NSNumber
     @NSManaged var title: String
     @NSManaged var itemDescription: String
+    @NSManaged var favorited: Bool
+  
 
 }
