@@ -15,6 +15,9 @@
 		7E6FDC9B1A57B222006FA405 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E6FDC9A1A57B222006FA405 /* Images.xcassets */; };
 		7E6FDC9E1A57B222006FA405 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E6FDC9C1A57B222006FA405 /* LaunchScreen.xib */; };
 		7E6FDCAA1A57B222006FA405 /* SandPointAuctionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6FDCA91A57B222006FA405 /* SandPointAuctionTests.swift */; };
+		7E6FDCB71A589EE9006FA405 /* AuctionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6FDCB51A589EE9006FA405 /* AuctionItemCell.swift */; };
+		7E6FDCB81A589EE9006FA405 /* AuctionItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E6FDCB61A589EE9006FA405 /* AuctionItemCell.xib */; };
+		7E6FDCBA1A58A1C1006FA405 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6FDCB91A58A1C1006FA405 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		7E6FDCA31A57B222006FA405 /* SandPointAuctionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SandPointAuctionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6FDCA81A57B222006FA405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E6FDCA91A57B222006FA405 /* SandPointAuctionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandPointAuctionTests.swift; sourceTree = "<group>"; };
+		7E6FDCB51A589EE9006FA405 /* AuctionItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuctionItemCell.swift; path = ../AuctionItemCell.swift; sourceTree = "<group>"; };
+		7E6FDCB61A589EE9006FA405 /* AuctionItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AuctionItemCell.xib; path = ../AuctionItemCell.xib; sourceTree = "<group>"; };
+		7E6FDCB91A58A1C1006FA405 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +87,12 @@
 		7E6FDC8B1A57B222006FA405 /* SandPointAuction */ = {
 			isa = PBXGroup;
 			children = (
+				7E6FDCB61A589EE9006FA405 /* AuctionItemCell.xib */,
+				7E6FDCB51A589EE9006FA405 /* AuctionItemCell.swift */,
 				7E6FDC8E1A57B222006FA405 /* AppDelegate.swift */,
 				7E6FDC931A57B222006FA405 /* MasterViewController.swift */,
 				7E6FDC951A57B222006FA405 /* DetailViewController.swift */,
+				7E6FDCB91A58A1C1006FA405 /* Item.swift */,
 				7E6FDC971A57B222006FA405 /* Main.storyboard */,
 				7E6FDC9A1A57B222006FA405 /* Images.xcassets */,
 				7E6FDC9C1A57B222006FA405 /* LaunchScreen.xib */,
@@ -200,6 +209,7 @@
 			files = (
 				7E6FDC991A57B222006FA405 /* Main.storyboard in Resources */,
 				7E6FDC9E1A57B222006FA405 /* LaunchScreen.xib in Resources */,
+				7E6FDCB81A589EE9006FA405 /* AuctionItemCell.xib in Resources */,
 				7E6FDC9B1A57B222006FA405 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,9 +228,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E6FDCB71A589EE9006FA405 /* AuctionItemCell.swift in Sources */,
 				7E6FDC921A57B222006FA405 /* SandPointAuction.xcdatamodeld in Sources */,
 				7E6FDC8F1A57B222006FA405 /* AppDelegate.swift in Sources */,
 				7E6FDC941A57B222006FA405 /* MasterViewController.swift in Sources */,
+				7E6FDCBA1A58A1C1006FA405 /* Item.swift in Sources */,
 				7E6FDC961A57B222006FA405 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

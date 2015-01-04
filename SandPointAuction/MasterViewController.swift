@@ -41,13 +41,11 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
     // Dispose of any resources that can be recreated.
   }
 
-  func insertNewObject(sender: AnyObject) {
+  func insertNewObjects(sender: AnyObject) {
     let context = self.fetchedResultsController.managedObjectContext
     let entity = self.fetchedResultsController.fetchRequest.entity!
     let newManagedObject = NSEntityDescription.insertNewObjectForEntityForName(entity.name!, inManagedObjectContext: context) as NSManagedObject
-         
-    // If appropriate, configure the new managed object.
-    // Normally you should use accessor methods, but using KVC here avoids the need to add a custom class to the template.
+    
     newManagedObject.setValue(NSDate(), forKey: "timeStamp")
          
     // Save the context.
@@ -125,7 +123,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
       
       let fetchRequest = NSFetchRequest()
       // Edit the entity name as appropriate.
-      let entity = NSEntityDescription.entityForName("Event", inManagedObjectContext: self.managedObjectContext!)
+      let entity = NSEntityDescription.entityForName("Item", inManagedObjectContext: self.managedObjectContext!)
       fetchRequest.entity = entity
       
       // Set the batch size to a suitable number.

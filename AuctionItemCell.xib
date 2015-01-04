@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B23" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6246"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="94" id="KGk-i7-Jjw" customClass="AuctionItemCell" customModule="SandPointAuction" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="365" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gj2-3p-DSG">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bz-Kq-h8f">
+                                <rect key="frame" x="15" y="4" width="20" height="41"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="gj2-3p-DSG" secondAttribute="height" id="50W-UI-hMi"/>
+                            <constraint firstAttribute="centerY" secondItem="0bz-Kq-h8f" secondAttribute="centerY" id="UwA-0O-4cT"/>
+                            <constraint firstAttribute="width" constant="50" id="po5-Nn-a2S"/>
+                            <constraint firstAttribute="centerX" secondItem="0bz-Kq-h8f" secondAttribute="centerX" id="xmb-gd-5sx"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A large box of wine bottles" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Prn-sw-6Y0">
+                        <rect key="frame" x="58" y="8" width="223" height="25"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gj2-3p-DSG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="6bc-NR-881"/>
+                    <constraint firstItem="gj2-3p-DSG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Gpb-Pc-jOl"/>
+                    <constraint firstAttribute="bottom" secondItem="gj2-3p-DSG" secondAttribute="bottom" id="bFo-QM-UaH"/>
+                    <constraint firstItem="Prn-sw-6Y0" firstAttribute="leading" secondItem="gj2-3p-DSG" secondAttribute="trailing" constant="8" id="l0u-OK-jAV"/>
+                    <constraint firstItem="Prn-sw-6Y0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="ooU-fJ-8SE"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="bFo-QM-UaH"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cornerSquare" destination="gj2-3p-DSG" id="usx-c1-KrI"/>
+                <outlet property="itemTitleLabel" destination="Prn-sw-6Y0" id="uWM-Eq-n1S"/>
+                <outlet property="numberLabel" destination="0bz-Kq-h8f" id="jlh-dt-wiP"/>
+            </connections>
+            <point key="canvasLocation" x="208.5" y="168"/>
+        </tableViewCell>
+    </objects>
+</document>
