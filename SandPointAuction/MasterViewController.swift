@@ -19,6 +19,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
   var managedObjectContext: NSManagedObjectContext? = nil
   var currentFilter : Filter = .All
   var _favoritesFetchedResultsController: NSFetchedResultsController? = nil
+  var underline: UIView!
 
   override func awakeFromNib() {
     super.awakeFromNib()
@@ -37,17 +38,65 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
     
     let segmentedControlHeader = UISegmentedControl(items: ["All", "Favorites"])
     segmentedControlHeader.addTarget(self, action: "didChangeFilter:", forControlEvents: UIControlEvents.ValueChanged)
-    self.tableView.tableHeaderView = segmentedControlHeader
+    segmentedControlHeader.selectedSegmentIndex = 0
+    self.tableView.tableHeaderView = createSegmentedControl()
 
     if let split = self.splitViewController {
       let controllers = split.viewControllers
       self.detailViewController = controllers[controllers.count-1].topViewController as? DetailViewController
     }
+    
+    let topBar = self.navigationController!.navigationBar
+    
+    topBar.layer.shadowColor = UIColor.blackColor().CGColor
+    topBar.layer.shadowOffset = CGSize(width: 0, height: 2)
+    topBar.layer.shadowOpacity = 0.5
+    topBar.layer.shadowRadius = 1
+    
+    topBar.titleTextAttributes = [NSFontAttributeName : UIFont(name: "AvenirNext-DemiBold", size: 18)!, NSForegroundColorAttributeName : UIColor.whiteColor()]
+    
   }
 
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
+  }
+  
+  func createSegmentedControl() -> UIView {
+    
+    let view = UIView(frame: CGRect(x: 0, y: 0, width: self.tableView.frame.width, height: 44))
+    let halfWidth = self.tableView.frame.width / 2
+    let labelOne = UILabel(frame: CGRect(x: 0, y: 0, width: halfWidth, height: 44))
+    let labelTwo = UILabel(frame: CGRect(x: halfWidth, y: 0, width: halfWidth, height: 44))
+    
+    for label in [labelOne, labelTwo] {
+      label.font = UIFont(name: "AvenirNext-Medium", size: 14)
+      label.textAlignment = .Center
+      label.userInteractionEnabled = true
+      view.addSubview(label)
+    }
+
+    labelOne.text = "All"
+    labelTwo.text = "Favorites"
+    
+    let tapperOne = UITapGestureRecognizer()
+    tapperOne.addTarget(self, action: "didTapAll:")
+    labelOne.addGestureRecognizer(tapperOne)
+    
+    let tapperTwo = UITapGestureRecognizer()
+    tapperTwo.addTarget(self, action: "didTapFavorites:")
+    labelTwo.addGestureRecognizer(tapperTwo)
+    
+//    let bottomBar = UIView(frame: CGRect(x: 0, y: 43, width: self.tableView.frame.width, height: 1))
+//    bottomBar.backgroundColor = UIColor.lightGrayColor()
+//    view.addSubview(bottomBar)
+    
+    underline = UIView(frame: CGRect(x: 24, y: 40, width: halfWidth - 48, height: 4))
+    underline.backgroundColor = UIColor.blackColor()
+    view.addSubview(underline)
+    underline.layer.cornerRadius = 2
+
+    return view
   }
 
   func insertNewObjects() {
@@ -116,17 +165,19 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
     cell.descriptionLabel.text = item.itemDescription
     
     if item.favorited {
-      cell.star.text = "\u{F005}"
-      cell.star.textColor = UIColor.yellowColor()
+      cell.filledStar.alpha = 1
     } else {
-      cell.star.text = "\u{F006}"
-      cell.star.textColor = UIColor.blackColor()
+      cell.filledStar.alpha = 0
     }
     
     let tapper = UITapGestureRecognizer()
     tapper.addTarget(self, action: "didTapStar:")
     cell.star.addGestureRecognizer(tapper)
     
+  }
+  
+  override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    return UIView(frame: CGRect(x: 0, y: 0, width: self.tableView.frame.width, height: 24))
   }
 
   // MARK: - Fetched results controller
@@ -209,35 +260,61 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
             if error != nil {
               println(error)
             }
-            if item.favorited {
-              cell.star.text = "\u{F005}"
-              cell.star.textColor = UIColor.yellowColor()
-            } else {
-              cell.star.text = "\u{F006}"
-              cell.star.textColor = UIColor.blackColor()
-              if currentFilter == .Favorites {
-                self.tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Bottom)
+            
+            UIView.animateWithDuration(0.2, animations: { () -> Void in
+              if item.favorited {
+                cell.filledStar.alpha = 1
+              } else {
+                cell.filledStar.alpha = 0
+                if self.currentFilter == .Favorites {
+                  self.tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+                }
               }
-            }
+            })
+            
           }
         }
       }
     }
-    
-    
   }
   
-  func didChangeFilter(sender: UISegmentedControl) {
-    
-    switch sender.selectedSegmentIndex {
-    case 0:
+  func didTapAll(sender: UITapGestureRecognizer) {
+    println("Did Tap All")
+    if currentFilter == .Favorites {
       currentFilter = .All
       self.tableView.reloadData()
-    case 1:
+      
+      UIView.animateWithDuration(0.3,
+        delay: 0.0,
+        usingSpringWithDamping: 0.7,
+        initialSpringVelocity: 0.4,
+        options: .AllowUserInteraction,
+        animations: { () -> Void in
+          self.underline.frame.origin.x = self.underline.frame.origin.x - self.tableView.frame.width / 2
+        }) { (success) -> Void in
+          return ()
+      }
+      
+    }
+  }
+  
+  func didTapFavorites(sender: UITapGestureRecognizer) {
+    println("Did Tap Favorites")
+    if currentFilter == .All {
       currentFilter = .Favorites
       self.tableView.reloadData()
-    default:
-      return ()
+      
+      UIView.animateWithDuration(0.3,
+        delay: 0.0,
+        usingSpringWithDamping: 0.7,
+        initialSpringVelocity: 0.4,
+        options: .AllowUserInteraction,
+        animations: { () -> Void in
+          self.underline.frame.origin.x = self.underline.frame.origin.x + self.tableView.frame.width / 2
+        }) { (success) -> Void in
+          return ()
+      }
+      
     }
   }
 

@@ -8,6 +8,7 @@
     <customFonts key="customFonts">
         <mutableArray key="fontawesome.ttf">
             <string>FontAwesome</string>
+            <string>FontAwesome</string>
         </mutableArray>
     </customFonts>
     <objects>
@@ -57,18 +58,26 @@
                             <constraint firstAttribute="height" constant="1" id="DRh-AP-alr"/>
                         </constraints>
                     </view>
+                    <label opaque="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12y-bk-KwT">
+                        <rect key="frame" x="451" y="8" width="28" height="31"/>
+                        <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="30"/>
+                        <color key="textColor" red="0.90196078430000004" green="0.68235294120000001" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWL-Ra-lxz">
-                        <rect key="frame" x="456" y="8" width="23" height="25"/>
-                        <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="24"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <rect key="frame" x="451" y="8" width="28" height="31"/>
+                        <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="30"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailingMargin" secondItem="KAF-lT-tal" secondAttribute="trailing" constant="8" id="1gM-hG-e5L"/>
+                    <constraint firstItem="12y-bk-KwT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="4sb-e6-6lo"/>
                     <constraint firstItem="ADv-ro-FBb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5LM-ux-iDM"/>
                     <constraint firstItem="gj2-3p-DSG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="6bc-NR-881"/>
                     <constraint firstAttribute="bottomMargin" secondItem="KAF-lT-tal" secondAttribute="bottom" constant="8" id="A07-ru-J4r"/>
+                    <constraint firstItem="12y-bk-KwT" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="DYD-YM-XJq"/>
                     <constraint firstItem="gj2-3p-DSG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="Gpb-Pc-jOl"/>
                     <constraint firstItem="KAF-lT-tal" firstAttribute="leading" secondItem="Prn-sw-6Y0" secondAttribute="leading" id="NB4-bk-mRA"/>
                     <constraint firstAttribute="trailing" secondItem="ADv-ro-FBb" secondAttribute="trailing" id="OSo-ex-hpX"/>
@@ -91,6 +100,7 @@
             <connections>
                 <outlet property="cornerSquare" destination="gj2-3p-DSG" id="usx-c1-KrI"/>
                 <outlet property="descriptionLabel" destination="KAF-lT-tal" id="496-Iq-Fpl"/>
+                <outlet property="filledStar" destination="12y-bk-KwT" id="SHl-5D-ohE"/>
                 <outlet property="itemTitleLabel" destination="Prn-sw-6Y0" id="uWM-Eq-n1S"/>
                 <outlet property="numberLabel" destination="0bz-Kq-h8f" id="jlh-dt-wiP"/>
                 <outlet property="star" destination="oWL-Ra-lxz" id="zAY-eC-yqp"/>

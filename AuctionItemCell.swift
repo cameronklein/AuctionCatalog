@@ -15,6 +15,7 @@ class AuctionItemCell: UITableViewCell {
   @IBOutlet weak var numberLabel: UILabel!
   @IBOutlet weak var descriptionLabel: UILabel!
   @IBOutlet weak var star: UILabel!
+  @IBOutlet weak var filledStar: UILabel!
   
   override func awakeFromNib() {
     super.awakeFromNib()
